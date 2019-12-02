@@ -3,7 +3,7 @@ package me.jzero2.mapstruct_demo.person;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface PersonMapper {
 
     @Mapping(source = "name", target = "fullName")
